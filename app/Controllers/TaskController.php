@@ -84,7 +84,7 @@ class TaskController
         return request()->redirect('/');
     }
 
-    public function list()
+    public function show()
     {
         $tasks = model('Task')->orderBy('id', 'desc')->get();
         return view('list', compact('tasks'));

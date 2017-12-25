@@ -11,7 +11,7 @@
 
 use Library\Route;
 
-Route::get('/', 'TaskController@list');
+Route::get('/', 'TaskController@show');
 Route::get('create', 'TaskController@create');
 Route::get('edit', 'TaskController@edit');
 Route::post('store', 'TaskController@store');
